@@ -1,0 +1,14 @@
+
+go to tomcat folder -> webapps -> copy project into webapps folder
+start server tomcat (2 ways)
+	way 1: start xampp -> start tomcat 
+	way 2: in tomcat folder go to bin -> startup.bat (shutdown.bat to stop)
+
+you can config server.xml -> change port to 8080 (if port is not 8080)
+you can manage tomcat by go to browser http://localhost:8080/manager/html username: tomcat, password: tomcat
+you can chang username or password: config -> tomcat-users.xml -> add the code below:
+
+  <role rolename="manager"/>
+  <user username="tomcat" password="tomcat" roles="manager"/>
+  <role rolename="manager-gui"/>
+  <user username="tomcat" password="tomcat" roles="manager-gui"/>
